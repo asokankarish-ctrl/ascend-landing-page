@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Ascend: a fictional software landing-page demo."
+  >
+
+  <title>Ascend | Landing Page Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <script
+  type="module"
+  src="https://unpkg.com/@google/model-viewer@4.2.0/dist/model-viewer.min.js"
+></script>
+
+</head>
+
+<body>
+  <p class="demo-banner">
+    Portfolio concept — fictional product, no real accounts or services.
+  </p>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span aria-hidden="true">▲</span> Ascend
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#preview">Preview</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="button button-small" href="#preview">Explore demo</a>
+  </header>
+
+  <main>
+    <!-- Section 1: Introduction -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">A CLEARER VIEW OF YOUR WORK</p>
+
+        <h1>Scale smarter.<br>Not <span>harder.</span></h1>
+
+        <p class="hero-description">
+          Explore a concept for bringing workflows, leads, and
+          reporting together in one focused workspace.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#preview">Explore the preview</a>
+          <a class="button button-outline" href="#features">
+            Discover the features
+          </a>
+        </div>
+
+        <p class="supporting-note">
+          Interactive landing-page concept. No signup required.
+        </p>
+      </div>
+
+      <div class="planet-stage" aria-hidden="true">
+  <div class="planet-placeholder"></div>
+
+  <model-viewer
+    id="earth-model"
+    src="https://api.getlayers.ai/storage/v1/object/public/public/assets/ascend-d9857ad1f2/planet.glb"
+    alt="Decorative Earth globe"
+    loading="eager"
+    interaction-prompt="none"
+    camera-orbit="0deg 75deg 105%"
+    field-of-view="30deg"
+    environment-image="neutral"
+    exposure="1.2"
+    shadow-intensity="0"
+    rotation-per-second="5deg"
+    auto-rotate-delay="0"
+    tabindex="-1"
+  ></model-viewer>
+</div>
+
+    </section>
+
+    <!-- Section 2: Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">EVERYTHING IN ORBIT</p>
+          <h2>Less scattered work.<br>More clarity.</h2>
+          <p>
+            Three ideas behind this fictional product experience.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">01</span>
+            <h3>Connected workflows</h3>
+            <p>
+              A concept for organising tasks and hand-offs so teams
+              can see what needs attention next.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">02</span>
+            <h3>Clear reporting</h3>
+            <p>
+              A dashboard concept that presents pipeline activity
+              in an approachable visual format.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number" aria-hidden="true">03</span>
+            <h3>Organised leads</h3>
+            <p>
+              An example of grouping opportunities by stage,
+              from first contact to a completed deal.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Product preview -->
+    <section id="preview" class="section">
+      <div class="container showcase-grid">
+        <div class="showcase-copy">
+          <p class="eyebrow">BUILT FOR MOMENTUM</p>
+          <h2>A bigger picture.<br>A clearer next step.</h2>
+          <p>
+            This illustrative dashboard shows how a software
+            product could present its pipeline. All numbers
+            below are sample data.
+          </p>
+          <a class="button button-outline" href="#contact">
+            About this concept
+          </a>
+        </div>
+
+        <div class="dashboard">
+          <div class="dashboard-header">
+            <h3>Pipeline overview</h3>
+            <span class="demo-tag">Sample data</span>
+          </div>
+
+          <p>Example opportunities at each stage</p>
+
+          <ul class="pipeline-list">
+            <li>
+              <span>New leads</span>
+              <strong>90</strong>
+              <div class="track" aria-hidden="true">
+                <span style="--bar-width: 90%"></span>
+              </div>
+            </li>
+
+            <li>
+              <span>Qualified</span>
+              <strong>72</strong>
+              <div class="track" aria-hidden="true">
+                <span style="--bar-width: 72%"></span>
+              </div>
+            </li>
+
+            <li>
+              <span>In negotiation</span>
+              <strong>48</strong>
+              <div class="track" aria-hidden="true">
+                <span style="--bar-width: 48%"></span>
+              </div>
+            </li>
+
+            <li>
+              <span>Closed won</span>
+              <strong>34</strong>
+              <div class="track" aria-hidden="true">
+                <span style="--bar-width: 34%"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Contact / call to action -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <p class="eyebrow">FROM CONCEPT TO EXPERIENCE</p>
+          <h2>A landing page with a different perspective.</h2>
+          <p>
+            Created by Asokan Karish as a guided portfolio project,
+            using a GetLayers design prompt as a starting point.
+          </p>
+
+          <a
+            class="button"
+            href="https://asokankarish-ctrl.github.io/developer-portfolio/"
+          >
+            Visit my portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand" href="#home">▲ Ascend</a>
+      <p>Fictional product · Portfolio demonstration</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
