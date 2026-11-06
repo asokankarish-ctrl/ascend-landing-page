@@ -565,3 +565,13 @@ h1 span {
     letter-spacing: 0.1em;
   }
 }
+
+.supporting-note {
+  position: relative;
+  display: table;
+  margin: 22px auto 0;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: #04060f;
+  color: #cbd5e1;
+}
